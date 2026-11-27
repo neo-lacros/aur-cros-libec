@@ -1,0 +1,10 @@
+--- a/fourcc.h
++++ b/fourcc.h
+@@ -7,6 +7,7 @@
+ #ifndef LIBEC_FOURCC_H_
+ #define LIBEC_FOURCC_H_
+ 
++#include <cstdint>
+ #include <string>
+ 
+ #include "brillo/brillo_export.h"

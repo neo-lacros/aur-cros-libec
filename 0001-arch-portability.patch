@@ -1,0 +1,28 @@
+--- a/BUILD.gn
++++ b/BUILD.gn
+@@ -25,7 +25,6 @@
+ 
+ default_pkg_deps = [
+   "absl",
+-  "fmap",
+   "libbrillo",
+   "libchrome",
+   "libusb-1.0",
+@@ -45,8 +44,6 @@
+     "device_event_command.cc",
+     "display_soc_command.cc",
+     "ec_command_factory.cc",
+-    "ec_firmware.cc",
+-    "ec_panicinfo.cc",
+     "ec_usb_endpoint.cc",
+     "fingerprint/fp_context_command.cc",
+     "fingerprint/fp_context_command_factory.cc",
+@@ -125,8 +122,6 @@
+     "ec_command_async.h",
+     "ec_command_factory.h",
+     "ec_command_version_supported.h",
+-    "ec_firmware.h",
+-    "ec_panicinfo.h",
+     "ec_usb_endpoint.h",
+     "flash_erase_command.h",
+     "flash_info_command.h",

@@ -1,0 +1,32 @@
+pkgbase = cros-libec
+	pkgdesc = ChromiumOS Embedded Controller library (libec)
+	pkgver = 0.0.1
+	pkgrel = 1
+	url = https://chromium.googlesource.com/chromiumos/platform2/+/HEAD/libec
+	arch = x86_64
+	license = BSD-3-Clause
+	makedepends = clang
+	makedepends = cros-common-mk
+	makedepends = git
+	makedepends = gn
+	makedepends = lld
+	makedepends = llvm
+	makedepends = compiler-rt
+	makedepends = ninja
+	makedepends = pkgconf
+	makedepends = python
+	makedepends = abseil-cpp
+	depends = cros-libchrome
+	depends = cros-libbrillo
+	depends = gcc-libs
+	depends = glibc
+	depends = libusb
+	options = !lto
+	source = platform2::git+https://chromium.googlesource.com/chromiumos/platform2.git#branch=main
+	source = 0001-arch-portability.patch
+	source = 0002-fourcc-cstdint.patch
+	sha256sums = SKIP
+	sha256sums = c1b5bc9c89c1fac6f13ddcc641d2aa20f109d077a304187e15a85b5fd62c48fb
+	sha256sums = 492fecaa1976b1cd525f857e2809ad98a1d3404514c7b9bb7b9510f395375598
+
+pkgname = cros-libec
